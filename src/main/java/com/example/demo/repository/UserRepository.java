@@ -9,4 +9,6 @@ import com.example.demo.Model.user;
 public interface UserRepository extends JpaRepository<user, Long>
 {
 	public Optional<user> findByEmail(String email);
+	
+	
 }

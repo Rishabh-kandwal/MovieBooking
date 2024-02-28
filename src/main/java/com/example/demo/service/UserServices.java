@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,9 @@ public class UserServices
 		return drepo.findByEmail(email); // Invoke Custom method
 	}
 
-	
+	public List<user> listAllUser() {
+		// TODO Auto-generated method stub
+		return drepo.findAll();
+	}	
 	
 }
